@@ -1,0 +1,21 @@
+.sideBar{
+    display: flex;
+    flex-direction: column;
+    width: auto;
+    height: auto;
+    background-color: rgba(250, 235, 215, 0.633);
+    position: absolute;
+    padding: 10px 15px;
+    
+
+}
+#logOut{
+    
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow';
+    border: hidden;
+    border-radius: 5%;
+    /* margin: 3px 10px;
+    padding: 7px 5px; */
+    background: rgb(100, 200, 255);
+    font-style: italic;
+}

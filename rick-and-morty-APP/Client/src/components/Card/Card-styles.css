@@ -1,0 +1,85 @@
+.card {
+    border: solid 2px rgb(32, 35, 37);
+    border-radius: 10px;
+    text-align: center;
+    font-family: monospace;
+    margin: 0 auto;
+    margin-top: 5%;
+    padding: 5px;
+    height: 400px;
+    width: 300px;
+    background-image: url(https://wallpapers.com/images/featured/8rc57d4ds44gqzau.jpg);
+    background-size: cover;
+}
+/* .card #center {
+    width: max-content;
+    height: 10%;
+} */
+/* .card #bottom {
+    background-color: rgba(21, 172, 202, 0.452);
+    position: relative;
+} */
+#detail{
+    text-decoration: none;
+}
+.card .img{
+    max-width: 200px;
+    max-height: 70%;
+    border-radius: 50%;
+    border: solid 2px pink;
+    filter:brightness(80%)
+}
+.card #name {
+    font-size: 30px;
+    font-weight: bold;
+    font-variant: small-caps;
+    color: black;
+    background-color: rgb(228, 91, 207);
+    border-radius: 2px;
+}
+
+.card .text {
+    width: 70%;
+    margin-left: 15%;
+    color: black;
+    font-weight: 200;
+    font-size: 15px;
+    background-color: rgba(221, 80, 200, 0.939);
+    border-radius: 2px;
+    /* border: solid 1px gray; */
+}
+
+.favButton {
+    position: absolute;
+    background: none;
+    border: hidden;
+    font-size: 40px;
+    color: rgba(128, 128, 128, 0.401)
+}
+
+
+.like-img {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.closer {
+    border-radius: 25%;
+    font-family: monospace;
+    font-weight: bold;
+    margin-bottom: 2%;
+    margin-left: 90%;
+}
+
+#detail :hover{
+    border-radius: 25px;
+    filter: brightness(100%);
+    transition: ease-in 250ms;
+    color: rgb(226, 237, 236);
+}
+
+.like-img :hover{
+    color: rgb(226, 237, 236);
+}

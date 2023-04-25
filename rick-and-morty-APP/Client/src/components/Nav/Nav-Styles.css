@@ -1,0 +1,26 @@
+.Nav  {
+    display: flex;
+    background-image: linear-gradient(#FAFD7CFF, #B7E4F9FF);
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    align-items: flex-end;
+    padding: 10px;
+    border: solid  whitesmoke 1px
+}
+
+.btn{
+    border: hidden;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow';
+    border-radius: 5%;
+    margin: 3% 6px;
+    padding: 7px 5px;
+    background: #A6EEE6FF;
+    
+    font-size: large;
+}
+
+.link {
+    text-decoration: none;
+    color: black;
+}
