@@ -1,0 +1,14 @@
+#fav {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.options {
+    padding: 0.25em 0.5em;
+    background-color: rgb(231, 98, 216);
+    border: 2px solid pink;
+    border-radius: 4px;
+    max-width: 70%;
+}
+

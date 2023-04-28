@@ -1,0 +1,11 @@
+.sideBar{
+    display: flex;
+    flex-direction: column;
+    width: auto;
+    height: auto;
+    background-color: rgba(250, 235, 215, 0.633);
+    position: absolute;
+    padding: 10px 15px;
+    
+
+}

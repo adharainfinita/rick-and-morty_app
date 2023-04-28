@@ -1,0 +1,6 @@
+* Funciones a implementar *
+
+- Que no se pueda agregar tarjetas repetidas;
+- Mensaje de alerta cuando el id no exista. (ej: 14155);
+- Mejorar el sistema de Error 404.
+- /Estilos/

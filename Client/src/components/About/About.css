@@ -1,0 +1,82 @@
+#about {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: center;
+}
+#about .contain {
+    background-color: gray;
+    background-image: linear-gradient(gray, pink);
+    border-radius: 5%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 5%;
+    max-width: min-content;
+    max-height: max-content;
+    margin: 0 auto;
+
+}
+.contain .section #title {
+    font-family: 'Trebuchet MS', sans-serif;
+    font-weight: bold;
+    font-weight: lighter;
+    font-size: 40px;
+    padding-left: 15%;
+    font-style:oblique;
+    
+}
+.contain .section p {
+    font-family: 'Trebuchet MS';
+    font-weight: lighter;
+    word-spacing: 5px;
+    color: rgb(68, 67, 67);
+}
+
+.contain #card {
+    border-style: groove;
+    border-radius: 1%;
+}
+.contain .section #name{
+    display: flex;
+    font-family:'Trebuchet MS', sans-serif;
+    font-style: italic;
+    font-weight: 200;
+    word-spacing: 3px;
+    padding-top: 5%;
+    justify-content: center;
+}
+.contain .section #age{
+    display: flex;
+    font-family:'Trebuchet MS', sans-serif;
+    font-style: italic;
+    font-weight: 100;
+    word-spacing: 3px;
+    justify-content: center;
+}
+.contain .section #profession {
+    display: flex;
+    font-family:'Trebuchet MS', sans-serif;
+    font-style: italic;
+    font-weight: 100;
+    word-spacing: 1px;
+    justify-content: center;
+}
+.contain .section #comment {
+    display: flex;
+    font-family:'Trebuchet MS', sans-serif;
+    font-style: italic;
+    font-size: 10px;
+    justify-content: flex-end;
+    padding-right: 2%;
+}
+
+#about #img{
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+}
+#about .section #meme {
+    width: 200px;
+    height: 100px;
+}

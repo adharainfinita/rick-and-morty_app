@@ -1,0 +1,13 @@
+
+body{
+   background-image:url('https://i.redd.it/5pr2d6fopii31.jpg');
+   background-size: cover;
+   /* background-repeat: repeat;
+   background-attachment: scroll; */
+}
+
+.App {
+   display: flex;
+   flex-direction: column;
+   align-items: stretch;
+}

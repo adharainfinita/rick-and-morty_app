@@ -1,0 +1,41 @@
+.bar {
+    display: flex;
+    flex-direction: row;
+    align-content: space-between;
+}
+.bar .section {
+    margin: 5px;
+    display: flex;
+}
+#input{
+    padding: auto;
+    background-color: rgba(241, 171, 233, 0.503);
+    border: 2px solid rgba(12, 5, 6, 0.774);
+    border-right: hidden;
+    height: 30px;
+    width: 138px;
+    margin: auto;
+}
+.bar #button1 {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow';
+    background-color: rgba(194, 169, 195, 0.62);
+    font-size: x-large;
+    font-style: bold;
+    height:30px;
+    width:35px;
+    border-left: hidden;
+    border-bottom-right-radius: 50%;
+    border-top-right-radius: 50%;
+}
+.bar #buttonRandom {
+    border-top-left-radius: 30%;
+    border-bottom-right-radius: 20%;
+    border-top-right-radius: 70%;
+    border-bottom-left-radius: 15%;
+}
+
+#image {
+    padding-top: auto;
+    width: 25px;
+    height: 25px;
+}
