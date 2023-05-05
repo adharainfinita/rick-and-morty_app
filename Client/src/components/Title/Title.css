@@ -1,6 +1,4 @@
-body {
-    background: rgb(18, 17, 18);
-}
+
 .presentation {
     display: flex;
     flex-direction: column;

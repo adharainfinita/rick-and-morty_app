@@ -1,7 +1,7 @@
 import { useState } from "react";
 import "./Form.css";
 import validate from "../../utils/validate";
-// import {validate} from "./validation";
+
 
 const Form = ({login}) => {
   
@@ -38,6 +38,8 @@ const Form = ({login}) => {
     setShowPassword(!showPassword); 
   };
 
+
+
   return (
     <div>
       <form className="form"  onSubmit={handleOnSubmit}>
@@ -52,7 +54,7 @@ const Form = ({login}) => {
             onChange={handleOnChange}
             value={userData.email}
         />
-        {errors.email && <p>{errors.email}</p>}
+        {errors.email && <p className="errors">{errors.email}</p>}
         </section>
         
         <section>
@@ -66,9 +68,11 @@ const Form = ({login}) => {
             onChange={handleOnChange}
             />
         <button id="eyeButton" type="button" onClick={handleShowPassword}>
-            {showPassword ? "Ocultar" : "Mostrar"}
+            {showPassword 
+            ? <img src="https://www.pngitem.com/pimgs/m/76-760338_close-eye-svg-closed-eye-icon-hd-png.png" /> 
+            : <img src="https://www.clipartmax.com/png/middle/291-2914907_eye-icon-vector-image-auge-symbol.png" />}
         </button>
-        {errors.password && <p>{errors.password}</p>}
+        {errors.password && <p className="errors">{errors.password}</p>}
           </section>
         <section>
           <button

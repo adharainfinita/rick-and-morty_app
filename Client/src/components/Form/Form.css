@@ -28,6 +28,7 @@ form{
     align-items: center;
 }
 .form input {
+    caret-color: darkgreen;
     width: 90%;
     height: 30px;
     margin: 0.5rem;
@@ -39,15 +40,28 @@ form{
 .form button {
     padding: 0.5em 1em;
     border: none;
-    background: rgb(100, 200, 255);
+    background: rgb(48, 98, 125);
     cursor: pointer;
+}
+
+.form .errors {
+    color: rgb(138, 31, 8);
+    font-weight: 200;
+    font-size: 12px;
+    margin: auto;
 }
 
 #eyeButton{
     border: none;
-    background: rgb(91, 128, 148);
+    background: none;
     cursor: pointer;
     border-radius: 50%;
+}
+#eyeButton img {
+    height: 30px;
+    width: 50px;
+    border-radius: 50%;
+    filter: invert(100%);
 }
 
 .form #title {
@@ -55,3 +69,4 @@ form{
     color: rgb(6, 58, 61);
     
 }
+

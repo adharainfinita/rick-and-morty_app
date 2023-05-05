@@ -1,6 +1,7 @@
 function validate(userData) {
     let tempErrors = {};
-    if (!/\S+@\S+\.\S+/.test(userData.email) || userData.email.length > 35) { 
+    if (!/\S+@\S+\.\S+/.test(userData.email) || userData.email.length > 35) {
+        tempErrors.email = "El email no tiene la estructura correcta"
     }
 
     if (userData.password.length < 5 || userData.password.length > 10) {

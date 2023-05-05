@@ -46,23 +46,20 @@ const Card = ({name, status, species, gender, origin, image, id, onClose})=> {
 
    return (
       <div className="card">
-
             <section id="top">
+               <h4 className="text">Card N°{id}</h4>
             <button onClick={()=>onClose(id)} className="closer">X</button>
-            <div className="like-img">
+            </section>
+            <section id="center">
+               <div className="like-img">
                <img src={image} alt='Not conection' className="img"/> 
                {isFav ? (<button className="favButton" onClick={handleFavorite}>❤️</button>) : 
             (<button className="favButton" onClick={handleFavorite}>🤍</button>)}
             </div>
-
             </section>
-            <section id="center">
-               <Link id="detail" to={`/detail/${id}`}>
+         <section id="bottom"> <Link id="detail" to={`/detail/${id}`}>
             <h2 id="name">{name}</h2>
                </Link>
-            </section>
-         <section id="bottom">
-            <h4 className="text">Card N°{id}</h4>
          </section>
          
       </div>

@@ -1,13 +1,16 @@
-#fav {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
+.pjs {
+    display: grid;
+    grid-row-end: 4;
+    grid-column-end: auto;
+    grid-column-gap: 10px;
 }
+
 
 .options {
     padding: 0.25em 0.5em;
-    background-color: rgb(231, 98, 216);
-    border: 2px solid pink;
+    background: rgba(11, 10, 10, 0.765);
+    color: aliceblue;
+    border: 1px solid #16FF00;
     border-radius: 4px;
     max-width: 70%;
 }

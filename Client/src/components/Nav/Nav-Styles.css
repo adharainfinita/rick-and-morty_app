@@ -1,6 +1,6 @@
 .Nav  {
     display: flex;
-    background-image: linear-gradient(rgb(43, 190, 87), rgb(24, 82, 110));
+    background-image: linear-gradient(#000000ae, #093846e8);
     flex-direction: row;
     flex-wrap: nowrap;
     justify-content: space-between;

@@ -59,7 +59,7 @@ const pjs = myFavorites.map(char =>{
             <option value="Genderless">Genderless</option>
             <option value="unknown">unknown</option>
             </select>
-            <div>
+            <div className="pjs">
                 {pjs}
             </div>
         </section>

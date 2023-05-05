@@ -1,5 +1,4 @@
-            
-const URL = "https://rickandmortyapi.com/api/character";
+const URL = process.env.API_URL;
 const axios = require("axios");
 
 const getCharById = async(req, res)=>{

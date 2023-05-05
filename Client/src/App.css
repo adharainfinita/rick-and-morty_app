@@ -1,9 +1,8 @@
-
+/* url('https://i.redd.it/5pr2d6fopii31.jpg') */
 body{
-   background-image:url('https://i.redd.it/5pr2d6fopii31.jpg');
+   background-image:radial-gradient( rgb(33, 4, 33), black);
    background-size: cover;
-   /* background-repeat: repeat;
-   background-attachment: scroll; */
+   backdrop-filter: blur(12px);
 }
 
 .App {
