@@ -11,9 +11,10 @@ import axios from "axios";
 import {useState, useEffect} from 'react';
 import {Routes, Route,useLocation, useNavigate} from "react-router-dom";
 // import { useDispatch } from 'react-redux';
-import SideBar from './components/SideBar/SideBar';
+import Footer from './components/SideBar/FooterBar';
 import swal from 'sweetalert';
-
+import { ToastContainer, toaast, toast } from "react-toastify";
+import 'react-toastify/dist/ReactToastify.css';
 
 
 // const EMAIL = "adharanosalevich@gmail.com";
@@ -47,6 +48,11 @@ function App() {
    const logOut =()=>{
       setAccess(false);
       navigate('/');
+      toast("¡Vuelve pronto!👋",{
+         position: toast.POSITION.TOP_CENTER,
+         className: "toast",
+         closeButton: false
+      })
 }
 
 useEffect(()=>{
@@ -58,9 +64,9 @@ useEffect(()=>{
    return (
       <div className='App'>
          {isHome !== "/" && isHome !== "/title" && <Nav logOut={logOut}/>}
+         <ToastContainer/>
 
          <Routes>
-
             <Route path="/title" element= {<Title />} />
             <Route path='/' element={<Form login={login}/>}/>
             <Route path="/home" element={
@@ -71,6 +77,7 @@ useEffect(()=>{
             <Route path= "/detail/:id" element={<Detail/>}/>
             <Route path= "/:others" element={<Error/>}/>
          </Routes>
+         <Footer/>
       </div>
       
    );

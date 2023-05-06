@@ -9,7 +9,7 @@
 }
 #input{
     padding: auto;
-    background-color: rgba(241, 171, 233, 0.503);
+    background-color: rgb(30, 28, 28);
     border: 2px solid rgba(12, 5, 6, 0.774);
     border-right: hidden;
     height: 30px;
@@ -18,7 +18,8 @@
 }
 .bar #button1 {
     font-family: 'Franklin Gothic Medium', 'Arial Narrow';
-    background-color: rgba(194, 169, 195, 0.62);
+    background-color: rgb(32, 30, 32);
+    color: oldlace;
     font-size: x-large;
     font-style: bold;
     height:30px;
@@ -38,4 +39,13 @@
     padding-top: auto;
     width: 25px;
     height: 25px;
+}
+
+.toast { 
+    background-color: rgba(23, 7, 54, 0.584);
+    color:aliceblue;
+    width: 300px;
+    height: 50px;
+    border-radius: 5%;
+    backdrop-filter: blur(12px);
 }

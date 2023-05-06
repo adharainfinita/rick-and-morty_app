@@ -3,7 +3,8 @@ import "./SearchBar-Styles.css";
 import swal from "sweetalert";
 import {useState} from "react";
 import { getCharacters } from "../../redux/actions";
-
+import { ToastContainer, toast } from "react-toastify";
+import 'react-toastify/dist/ReactToastify.css';
 
 
 
@@ -17,12 +18,14 @@ const SearchBar =()=> {
    }
 
    const onSearch = (id)=>{
-      if(id < 827) dispatch(getCharacters(id));
+      if(id <827){ 
+         dispatch(getCharacters(id));
+      }
       else swal('¡WUBA LUBA DUB DUB!','¡No hay personajes con este ID!', 'error');
    }
 
    const getRandomCharacter = ()=>{
-      dispatch(getCharacters(Math.floor(Math.random()* 826)))
+      dispatch(getCharacters(Math.floor(Math.random()* 826)));
    }
 
    return (

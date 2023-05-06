@@ -1,5 +1,4 @@
 .card {
-    border: solid 3px rgb(32, 35, 37);
     border-radius: 10px;
     text-align: center;
     font-family: monospace;
@@ -8,7 +7,8 @@
     height: 300px;
     width: 400px;
     border-end-end-radius: 30%;
-    background-color: rgba(11, 10, 10, 0.765)
+    background-color: rgba(19, 19, 19, 0.765);
+    
 }
 
 
@@ -18,8 +18,8 @@
 .card .img{
     max-width: 200px;
     max-height: 70%;
-    /* border-radius: 50%; */
     border: solid 2px pink;
+    filter: drop-shadow(10 px 20px whitesmoke);
     
 }
 .card #name {
@@ -28,7 +28,7 @@
     font-weight: bold;
     font-variant: small-caps;
     color: oldlace;
-    background-image: linear-gradient(black, #0f6292b9);
+    background-image: linear-gradient(rgba(0, 0, 0, 0.585), #651577);
     border-bottom-left-radius: 10px;
     border-bottom-right-radius: 15%;
     padding-bottom: 2%;
@@ -52,8 +52,8 @@
     color: black;
     font-weight: 200;
     font-size: 15px;
-    border-radius: 2px;
-    background: #16FF00;
+    border-radius: 0 2px 2px 0;
+    background: #15ff00e5;
 }
 
 .favButton {

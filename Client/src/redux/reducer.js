@@ -1,6 +1,8 @@
 import swal from "sweetalert"
 import { ADD_CARD, ADD_FAV, REMOVE_FAV, REMOVE_CARD, ADD_CARD_DETAIL, 
-    CLEAN_CARD_DETAIL, FILTER, ORDER } from "./action-types"
+    CLEAN_CARD_DETAIL, FILTER, ORDER } from "./action-types";
+import { toast } from "react-toastify";
+
 
     const initialState ={
         myFavorites: [],
@@ -49,12 +51,17 @@ import { ADD_CARD, ADD_FAV, REMOVE_FAV, REMOVE_CARD, ADD_CARD_DETAIL,
                     character.id === action.payload.id);
                     if(action.payload.name){
                         if(!charactersFiltered.length){
+                            toast.success("La tarjeta ha sido agregada con éxito👏", {
+                                position: toast.POSITION.TOP_LEFT,
+                                className: "toast",
+                                progress: false
+                            })
                             return {
                                 ...state,
                                 characters: [...state.characters, action.payload]
                             }
                         }
-                        else  swal("¡WUBA LUBA DUB DUB!",'¡Ya hay un personaje con este ID!', "error");
+                        else swal("¡WUBA LUBA DUB DUB!",'¡Ya hay un personaje con este ID!', "error");
                     }
                 break;
 

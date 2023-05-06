@@ -5,16 +5,12 @@ import "./Cards-styles.css";
 import { useDispatch } from 'react-redux';
 import { removeCard } from '../../redux/actions.js';
 import swal from 'sweetalert';
-import { useLocation } from 'react-router-dom';
-import { ToastContainer, toast } from 'react-toastify';
-import 'react-toastify/dist/ReactToastify.css';
+
 
 const Cards = ()=> {
 
    const characters = useSelector(state => state.characters);
    const dispatch = useDispatch();
-   const location = useLocation();
-   const isFavorite = location.pathname;
    
    const pjs = characters?.map(char =>{
       const onClose =(id)=>{
@@ -28,8 +24,8 @@ const Cards = ()=> {
       .then((willDelete)=>{
          if(willDelete) {
             dispatch(removeCard(id))
-            swal("¡La carta ha sido eliminada!",{
-               icon: "success",
+            swal({
+               text: "La carta ha sido eliminada"
             });
          } 
          else{
@@ -37,16 +33,7 @@ const Cards = ()=> {
          }
       });
    }
-   toast('Bienvenido a Rick And Morty App!', {
-      position: "bottom-center",
-      autoClose: 2000,
-      hideProgressBar: false,
-      closeOnClick: true,
-      pauseOnHover: true,
-      draggable: true,
-      progress: undefined,
-      className: "toast"
-  });
+
 
    return (
       <Card
@@ -64,7 +51,8 @@ const Cards = ()=> {
 )})
 
    return (
-         <div className='Cards'>{pjs}</div>
+         <div className='Cards'>{pjs}
+         </div>
    );
 }
 export default Cards;

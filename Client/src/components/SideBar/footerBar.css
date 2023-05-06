@@ -1,0 +1,17 @@
+footer{
+    display: flex;
+    flex-direction: column;
+    width: auto;
+    height: 100px;
+    background-image: linear-gradient(rgb(15, 56, 3), black);
+    padding: 10px 15px;
+    align-items: center;
+    justify-content: flex-end;
+    margin-top: 10%;
+}
+
+footer img {
+    position: absolute;
+    width: 200px;
+    height: 200px;
+}

@@ -4,6 +4,8 @@ import {Link} from "react-router-dom";
 import { useEffect } from "react";
 import { addFav, removeFav} from "../../redux/actions";
 import { useDispatch, useSelector } from "react-redux";
+import { ToastContainer, toast } from "react-toastify";
+import 'react-toastify/dist/ReactToastify.css';
 
 
 
@@ -27,17 +29,34 @@ const Card = ({name, status, species, gender, origin, image, id, onClose})=> {
       });
    }, [myFavorites, id]);
 
-
+const notification = ()=>{
+   if(isFav){
+      toast.info("Favorito removido🤍", {
+      position: toast.POSITION.TOP_LEFT,
+      className: "toast",
+      toastId: id,
+   })
+   }
+   else{
+      toast.info("Nuevo favorito❤️", {
+         position: toast.POSITION.TOP_RIGHT,
+         className: "toast",
+         toastId: id,
+      })
+   }
+}
    
    
    const handleFavorite=()=>{
       if(isFav){
          setIsFav(false);
-         dispatch(removeFav(id))
+         notification();
+         dispatch(removeFav(id));
       }
       else{
          setIsFav(true);
-         dispatch(addFav({name, status, species, gender, origin, image, onClose, id}))
+         notification()
+         dispatch(addFav({name, status, species, gender, origin, image, onClose, id}));
       }
    }
 
@@ -46,6 +65,7 @@ const Card = ({name, status, species, gender, origin, image, id, onClose})=> {
 
    return (
       <div className="card">
+         
             <section id="top">
                <h4 className="text">Card N°{id}</h4>
             <button onClick={()=>onClose(id)} className="closer">X</button>
